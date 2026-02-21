@@ -62,7 +62,7 @@ jobs:
   menuconfig:
     name: ⚙️ Menuconfig & Push
     if: github.event.inputs.ssh == 'true' && github.event.inputs.device != 'all'
-    runs-on: ubuntu-22.04
+    runs-on: self-hosted
     steps:
       - name: 🙌 Checkout
         uses: actions/checkout@v4
